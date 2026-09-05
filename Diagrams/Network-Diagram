@@ -1,0 +1,9 @@
+             Internet
+                 │
+              Router
+                 │
+        ┌────────┴────────┐
+        │                 │
+     Your PC          Ubuntu Server
+                           │
+                     Samba Shares
