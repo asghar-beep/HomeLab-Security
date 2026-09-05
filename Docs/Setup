@@ -1,0 +1,21 @@
+
+# Ubuntu Server Installation
+
+## System
+
+- Device: Old Laptop
+- OS: Ubuntu Server 24.04 LTS
+
+## Completed Configuration
+
+- Installed Ubuntu Server
+- Connected to home network
+- Configured IPv4 address
+- Enabled SSH
+- Installed Samba
+- Created shared folder
+- Configured user permissions
+
+## Notes
+
+This server is the foundation of my cybersecurity home lab and will later host monitoring and security tools.
