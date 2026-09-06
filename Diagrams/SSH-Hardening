@@ -1,0 +1,73 @@
+# SSH Hardening
+
+## Objective
+
+Improve the security of remote access to my Ubuntu Server by using SSH key authentication instead of password authentication.
+
+## Configuration
+
+### SSH Key Authentication
+
+Generated an ED25519 SSH key pair on my Windows PC.
+
+The private key is stored securely on the Windows client and is not stored in this repository.
+
+The public key was added to the Ubuntu Server:
+
+```text
+~/.ssh/authorized_keys
+```
+
+### File Permissions
+
+Configured SSH directory permissions:
+
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
+
+### Password Authentication
+
+Disabled SSH password authentication in:
+
+```text
+/etc/ssh/sshd_config
+```
+
+Configuration:
+
+```text
+PasswordAuthentication no
+PubkeyAuthentication yes
+```
+
+### Configuration Testing
+
+Tested the SSH configuration before restarting the service:
+
+```bash
+sudo sshd -t
+```
+
+The configuration passed without errors.
+
+### Testing
+
+Successfully connected from my Windows PC using SSH key authentication.
+
+The SSH key is protected with a passphrase.
+
+## Security Improvement
+
+Password-based SSH authentication was disabled, reducing the risk of attackers gaining access through password guessing or brute-force attempts.
+
+## Skills Demonstrated
+
+* SSH
+* Linux system administration
+* Public-key cryptography
+* Linux file permissions
+* SSH configuration
+* Server hardening
+* Troubleshooting
