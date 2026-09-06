@@ -35,7 +35,7 @@ My goal is to become a Cybersecurity Analyst by building and securing my own inf
 
 ## Network Diagram
 
-> Coming soon
+![Network Diagram](Diagrams/Network-Diagram.png)
 
 ## Screenshots
 
