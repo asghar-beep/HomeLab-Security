@@ -26,7 +26,7 @@ My goal is to become a Cybersecurity Analyst by building and securing my own inf
 - [x] Install Ubuntu Server
 - [x] Configure IPv4 networking
 - [x] Create shared folders with Samba
-- [ ] Secure SSH with key authentication
+- [x] Secure SSH with key authentication
 - [ ] Configure UFW firewall rules
 - [ ] Install Pi-hole
 - [ ] Deploy Wazuh SIEM
