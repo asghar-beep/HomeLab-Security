@@ -9,9 +9,9 @@ Configure the Ubuntu Server with a permanent IPv4 address to ensure reliable con
 | Setting | Value |
 |---|---|
 | Interface | enp3s0 |
-| IPv4 Address | 192.168.1.104 |
+| IPv4 Address | 192.168.1.109 |
 | Subnet | 255.255.255.0 (/24) |
-| Gateway | 192.168.1.1 |
+| Gateway | 192.168.1.4 |
 | DNS | 1.1.1.1, 8.8.8.8 |
 
 ## Netplan Configuration
@@ -25,10 +25,10 @@ network:
     enp3s0:
       dhcp4: no
       addresses:
-        - 192.168.1.104/24
+        - 192.168.1.109/24
       routes:
         - to: default
-          via: 192.168.1.1
+          via: 192.168.1.4
       nameservers:
         addresses:
           - 1.1.1.1
